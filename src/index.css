@@ -1,13 +1,29 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+/* Put custom base overrides inside @layer base so they apply after Tailwind's preflight */
+@layer base {
+  /* Ensure full-height layout if you need it */
+  html, body, #root {
+    height: 100%;
+  }
+
+  /* Body defaults — use cross-platform system fonts + fallbacks */
+  body {
+    margin: 0;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+      "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: transparent; /* change if you want a default bg */
+    color: inherit;
+  }
+
+  /* Code font fallback chain */
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, "Roboto Mono",
+      "Courier New", monospace;
+  }
 }

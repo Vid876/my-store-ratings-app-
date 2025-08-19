@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+=======
+# my-store-ratings-app-
+A full-stack store rating app with role-based access for Admins, Users, and Store Owners. Users can browse and rate stores, while admins manage the platform. Built with React, Node.js/Express, and MySQL. This project was created as a solution for a coding challenge.
+>>>>>>> 864b4a34f7dff689c6ed86cfe5902a703016de87
